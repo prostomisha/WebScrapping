@@ -13,14 +13,34 @@ response = requests.get(url)
 
 soup = BeautifulSoup(response.text, 'html.parser')
 
+entries = []
+
 news_list = soup.find_all('tr', class_='athing')
 subtext_list = soup.find_all('td', class_='subtext')
 
+
 for index, (news, subtext) in enumerate(zip(news_list, subtext_list)):
-    news_number = news.find('span', class_='rank').get_text()
+
+    # extracting all required fields
+    news_number = news.find('span', class_='rank').get_text().strip('.')
     news_title = news.find('span', class_='titleline').find('a').get_text()
-    news_points = subtext.find('span', class_='score').get_text()
-    news_comments = subtext.find_all('a')[-1].get_text()
-    print(news_number, news_title, news_points, news_comments)
+    news_points = subtext.find('span', class_='score').get_text().split()[0]
+    news_comments = subtext.find_all('a')[-1].get_text().split()[0]
 
+    # if value of news_comments is 'discuss' change it to '0' for converting it to int after
+    if news_comments == 'discuss':
+        news_comments = '0'
 
+    # structuring data to json format using dict
+    entry = {
+        'news_number': int(news_number),
+        'news_title': news_title,
+        'news_points': int(news_points),
+        'news_comments': int(news_comments)
+    }
+    print(entry)
+
+    # adding each dict to our list
+    entries.append(entry)
+
+print(entries)
