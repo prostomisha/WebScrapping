@@ -1,31 +1,31 @@
-,news_number,news_title,news_points,news_comments
-0,14,AI Search: The Bitter-Er Lesson,263,156
-1,11,The sun's magnetic field is about to flip,334,150
-2,5,Nvidia Warp: A Python framework for high performance GPU simulation and graphics,446,125
-3,27,I found a 55 year old bug in the first Lunar Lander game,382,105
-4,3,Voyager 1 is back online! NASA spacecraft returns data from all 4 instruments,535,92
-5,18,New algorithm discovers language just by watching videos,133,53
-6,30,Spaced repetition for teaching two-year olds how to read,84,47
-7,22,Face of ancient Australian 'giga-goose' revealed after fossil skull found,68,42
-8,20,Study finds juvenile dolphins who play together are more successful as adults,103,30
-9,4,Eden Abhez: The strangest hit songwriter,183,28
-10,28,How to design and manufacture your own chip [video],140,25
-11,19,From grep to SPLADE: a journey through semantic search,48,15
-12,13,Chaos in the medium: Watercolour plotting,165,12
-13,29,Tracing Intel's Atom Journey: Goldmont Plus,55,12
-14,7,"Syzygy: An open standard for low cost, compact and high-performance peripherals",90,11
-15,26,Show HN: Elles – A nicer /bin/ls,30,11
-16,12,The Impossibility of Supersized Machines (2017),24,9
-17,24,Britain's 'Pompeii': UK's Largest Bronze Age Find,37,8
-18,8,The Four Kinds of Research-and-Development Teams,12,7
-19,23,Overcoming pitfalls of Postgres logical decoding,21,4
-20,2,Threescaper: A website for loading Townscaper models into Three.js,24,2
-21,25,DARPA unveils 6 new designs for uncrewed vertical-takeoff military aircraft,21,2
-22,9,Nango (YC W23) Is Hiring a Senior Product Engineer (100% Remote),0,0
-23,15,H.264 Is Magic (2016),274,161
-24,10,Exponentially Better Rotations (2022),222,41
-25,16,The borrow checker within,167,18
-26,21,Kizhi Pogost,43,3
-27,6,True Defamation [pdf],35,20
-28,17,Nondeterminism in Formal Specification,26,1
-29,1,Leveraging Zig's Allocators,25,1
+,news_number,news_title,news_points,news_comments,filter,timestamp
+0,29,AI Search: The Bitter-Er Lesson,284,176,Sorted by comments,2024-06-15 19:42:22.114997
+1,23,The sun's magnetic field is about to flip,351,155,Sorted by comments,2024-06-15 19:42:22.114997
+2,8,Voyager 1 is back online! NASA spacecraft returns data from all 4 instruments,707,139,Sorted by comments,2024-06-15 19:42:22.114997
+3,25,Face of ancient Australian 'giga-goose' revealed after fossil skull found,77,46,Sorted by comments,2024-06-15 19:42:22.114997
+4,12,Data-fueled neurotargeting could kill democracy,22,36,Sorted by comments,2024-06-15 19:42:22.114997
+5,27,The Impossibility of Supersized Machines (2017),49,34,Sorted by comments,2024-06-15 19:42:22.114997
+6,18,Eden Abhez: The strangest hit songwriter,200,30,Sorted by comments,2024-06-15 19:42:22.114997
+7,19,"Syzygy: An open standard for low cost, compact and high-performance peripherals",111,22,Sorted by comments,2024-06-15 19:42:22.114997
+8,2,Threescaper: A website for loading Townscaper models into Three.js,92,14,Sorted by comments,2024-06-15 19:42:22.114997
+9,26,Chaos in the medium: Watercolour plotting,192,13,Sorted by comments,2024-06-15 19:42:22.114997
+10,10,Can Language Models Serve as Text-Based World Simulators?,27,10,Sorted by comments,2024-06-15 19:42:22.114997
+11,11,The Four Kinds of Research-and-Development Teams,37,9,Sorted by comments,2024-06-15 19:42:22.114997
+12,28,Ventoy: Remove BLOBs from the Source Tree,46,7,Sorted by comments,2024-06-15 19:42:22.114997
+13,5,Exhaustive Survey of Rickrolling in Academic Literature [pdf],34,6,Sorted by comments,2024-06-15 19:42:22.114997
+14,3,A most profound video game: a good cognitive aid for research,38,5,Sorted by comments,2024-06-15 19:42:22.114997
+15,7,Survival Situation: The debate over evolution and its discoverer,13,4,Sorted by comments,2024-06-15 19:42:22.114997
+16,13,Diagnosing video signal loss on Wii and GBS-Control,29,3,Sorted by comments,2024-06-15 19:42:22.114997
+17,4,DARPA Shows Concepts for the Future of VTOL Uncrewed Aerial Systems,19,2,Sorted by comments,2024-06-15 19:42:22.114997
+18,20,Introduction to the Odin Programming Language,28,2,Sorted by comments,2024-06-15 19:42:22.114997
+19,15,Radioactive drugs strike cancer with precision,22,1,Sorted by comments,2024-06-15 19:42:22.114997
+20,14,Nango (YC W23) Is Hiring a Senior Product Engineer (100% Remote),0,0,Sorted by comments,2024-06-15 19:42:22.114997
+21,17,"How to Raise a Tribal Army in Pre-Roman Europe, Part II",35,0,Sorted by comments,2024-06-15 19:42:22.114997
+22,21,Exponentially Better Rotations (2022),239,44,Sorted by points,2024-06-15 19:42:22.114997
+23,1,Leveraging Zig's Allocators,103,17,Sorted by points,2024-06-15 19:42:22.114997
+24,22,True Defamation [pdf],45,38,Sorted by points,2024-06-15 19:42:22.114997
+25,6,Address Sanitizer Internals,42,3,Sorted by points,2024-06-15 19:42:22.114997
+26,30,Nondeterminism in Formal Specification,28,2,Sorted by points,2024-06-15 19:42:22.114997
+27,16,What About libjpeg v9? (2013),26,0,Sorted by points,2024-06-15 19:42:22.114997
+28,24,Useful and Overlooked Skills,20,4,Sorted by points,2024-06-15 19:42:22.114997
+29,9,Embedded Swift [video],7,0,Sorted by points,2024-06-15 19:42:22.114997

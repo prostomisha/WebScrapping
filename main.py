@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
+from datetime import datetime
 
 ''' parser of the website https://news.ycombinator.com/ which extracts the first 30 entries 
 taking only the number, the title, the points, and the number of comments for each entry and 
@@ -30,16 +31,17 @@ for index, (news, subtext) in enumerate(zip(news_list, subtext_list)):
 
     # points
     news_points = subtext.find('span', class_='score')
-
     # if there is no points we set value to '0' (issue with one of the news)
     news_points2 = news_points.get_text().split()[0] if news_points else '0'
 
     # comments
     news_comments = subtext.find_all('a')[-1].get_text().split()[0]
 
-    # if value of news_comments is 'discuss' change it to '0' for converting it to int after
-    # one of the news from website was created incorrectly w/out many fields
-    #  news: Nango (YC W23) Is Hiring a Senior Product Engineer (100% Remote)
+    # If value of news_comments is 'discuss' change it to '0' for converting it to int after
+    ''' One of the news from website was created incorrectly with only 2 fields (time and hide)
+    The fastest way to solve is to check if the last element == 'hide' change it to '0' 
+    New's article: "Nango (YC W23) Is Hiring a Senior Product Engineer (100% Remote)"
+    '''
     if news_comments == 'discuss' or news_comments == 'hide':
         news_comments = '0'
 
@@ -69,8 +71,12 @@ def filter_entries(entries):
     list2 = []
     for entry in entries:
         if count_words(entry) > 5:
+            entry.update({'filter': 'Sorted by comments'})
+            entry.update({'timestamp': str(datetime.now())})
             list1.append(entry)
         elif count_words(entry) <= 5:
+            entry.update({'filter': 'Sorted by points'})
+            entry.update({'timestamp': str(datetime.now())})
             list2.append(entry)
 
     # sorting list ordered by the number of comments
@@ -83,7 +89,8 @@ def filter_entries(entries):
 
 
 sorted_list = filter_entries(entries)
-headers = ['news_number', 'news_title', 'news_points', 'news_comments']
+print(sorted_list)
+headers = ['news_number', 'news_title', 'news_points', 'news_comments', 'filter', 'timestamp']
 df = pd.DataFrame(sorted_list, columns=headers)
 print(df)
 df.to_csv('news.csv')
