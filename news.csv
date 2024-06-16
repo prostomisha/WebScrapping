@@ -1,31 +1,31 @@
 ,news_number,news_title,news_points,news_comments,filter,timestamp
-0,29,AI Search: The Bitter-Er Lesson,284,176,Sorted by comments,2024-06-15 19:42:22.114997
-1,23,The sun's magnetic field is about to flip,351,155,Sorted by comments,2024-06-15 19:42:22.114997
-2,8,Voyager 1 is back online! NASA spacecraft returns data from all 4 instruments,707,139,Sorted by comments,2024-06-15 19:42:22.114997
-3,25,Face of ancient Australian 'giga-goose' revealed after fossil skull found,77,46,Sorted by comments,2024-06-15 19:42:22.114997
-4,12,Data-fueled neurotargeting could kill democracy,22,36,Sorted by comments,2024-06-15 19:42:22.114997
-5,27,The Impossibility of Supersized Machines (2017),49,34,Sorted by comments,2024-06-15 19:42:22.114997
-6,18,Eden Abhez: The strangest hit songwriter,200,30,Sorted by comments,2024-06-15 19:42:22.114997
-7,19,"Syzygy: An open standard for low cost, compact and high-performance peripherals",111,22,Sorted by comments,2024-06-15 19:42:22.114997
-8,2,Threescaper: A website for loading Townscaper models into Three.js,92,14,Sorted by comments,2024-06-15 19:42:22.114997
-9,26,Chaos in the medium: Watercolour plotting,192,13,Sorted by comments,2024-06-15 19:42:22.114997
-10,10,Can Language Models Serve as Text-Based World Simulators?,27,10,Sorted by comments,2024-06-15 19:42:22.114997
-11,11,The Four Kinds of Research-and-Development Teams,37,9,Sorted by comments,2024-06-15 19:42:22.114997
-12,28,Ventoy: Remove BLOBs from the Source Tree,46,7,Sorted by comments,2024-06-15 19:42:22.114997
-13,5,Exhaustive Survey of Rickrolling in Academic Literature [pdf],34,6,Sorted by comments,2024-06-15 19:42:22.114997
-14,3,A most profound video game: a good cognitive aid for research,38,5,Sorted by comments,2024-06-15 19:42:22.114997
-15,7,Survival Situation: The debate over evolution and its discoverer,13,4,Sorted by comments,2024-06-15 19:42:22.114997
-16,13,Diagnosing video signal loss on Wii and GBS-Control,29,3,Sorted by comments,2024-06-15 19:42:22.114997
-17,4,DARPA Shows Concepts for the Future of VTOL Uncrewed Aerial Systems,19,2,Sorted by comments,2024-06-15 19:42:22.114997
-18,20,Introduction to the Odin Programming Language,28,2,Sorted by comments,2024-06-15 19:42:22.114997
-19,15,Radioactive drugs strike cancer with precision,22,1,Sorted by comments,2024-06-15 19:42:22.114997
-20,14,Nango (YC W23) Is Hiring a Senior Product Engineer (100% Remote),0,0,Sorted by comments,2024-06-15 19:42:22.114997
-21,17,"How to Raise a Tribal Army in Pre-Roman Europe, Part II",35,0,Sorted by comments,2024-06-15 19:42:22.114997
-22,21,Exponentially Better Rotations (2022),239,44,Sorted by points,2024-06-15 19:42:22.114997
-23,1,Leveraging Zig's Allocators,103,17,Sorted by points,2024-06-15 19:42:22.114997
-24,22,True Defamation [pdf],45,38,Sorted by points,2024-06-15 19:42:22.114997
-25,6,Address Sanitizer Internals,42,3,Sorted by points,2024-06-15 19:42:22.114997
-26,30,Nondeterminism in Formal Specification,28,2,Sorted by points,2024-06-15 19:42:22.114997
-27,16,What About libjpeg v9? (2013),26,0,Sorted by points,2024-06-15 19:42:22.114997
-28,24,Useful and Overlooked Skills,20,4,Sorted by points,2024-06-15 19:42:22.114997
-29,9,Embedded Swift [video],7,0,Sorted by points,2024-06-15 19:42:22.114997
+0,25,What You Get After Running an SSH Honeypot for 30 Days,456,302,Sorted by comments,2024-06-16 22:15:23.378958
+1,28,NLRB judge declares non-compete clause is an unfair labor practice,330,188,Sorted by comments,2024-06-16 22:15:23.378958
+2,5,The Raspberry Pi 5 Is No Match for a Tini-Mini-Micro PC,208,170,Sorted by comments,2024-06-16 22:15:23.378958
+3,7,Show HN: We Made The World's Smallest and Cheapest Network Switch,509,141,Sorted by comments,2024-06-16 22:15:23.378958
+4,22,The Architecture Behind a One-Person Tech Startup (2021),195,58,Sorted by comments,2024-06-16 22:15:23.378958
+5,24,"Edinburgh, Scotland makes it illegal to advertise SUVs",62,57,Sorted by comments,2024-06-16 22:15:23.378958
+6,4,Sales happen when buyers fear missing out,111,51,Sorted by comments,2024-06-16 22:15:23.378958
+7,1,Building SimCity: How to put the world in a machine,99,44,Sorted by comments,2024-06-16 22:15:23.378958
+8,19,SimCity in the web browser using WebAssembly and OpenGL,202,44,Sorted by comments,2024-06-16 22:15:23.378958
+9,30,"Ernest Shackleton's Last Ship, Quest, Discovered Off the Coast of Canada",88,31,Sorted by comments,2024-06-16 22:15:23.378958
+10,11,OpenAI and Microsoft Azure to deprecate GPT-4 32K,22,21,Sorted by comments,2024-06-16 22:15:23.378958
+11,15,Htmd: A turndown.js inspired HTML-to-Markdown converter for Rust,71,19,Sorted by comments,2024-06-16 22:15:23.378958
+12,9,PaperTapeReader: A DIY reader for vintage 8-bit paper tapes,65,14,Sorted by comments,2024-06-16 22:15:23.378958
+13,8,I've compared nearly all Rust crates.io crates to contents of their Git repos,70,12,Sorted by comments,2024-06-16 22:15:23.378958
+14,26,Do you still count on your fingers?,7,12,Sorted by comments,2024-06-16 22:15:23.378958
+15,23,Using a 1965 Dutch Rotary Phone via VoIP (T65) in 2024,29,11,Sorted by comments,2024-06-16 22:15:23.378958
+16,3,Packaging Swift Apps for Alpine Linux,42,7,Sorted by comments,2024-06-16 22:15:23.378958
+17,16,Making my first embedded Linux system,117,7,Sorted by comments,2024-06-16 22:15:23.378958
+18,29,Building an O2 concentrator for welding and vacuum tube work,55,5,Sorted by comments,2024-06-16 22:15:23.378958
+19,18,The 286's internal registers (2022),43,4,Sorted by comments,2024-06-16 22:15:23.378958
+20,14,How to enumerate trees from a context-free grammar,18,3,Sorted by comments,2024-06-16 22:15:23.378958
+21,13,The Theft of the Ghent Altarpiece,35,1,Sorted by comments,2024-06-16 22:15:23.378958
+22,10,Lago (Open Source Usage Based Billing) Is Hiring a Head of Finance (SF),0,0,Sorted by comments,2024-06-16 22:15:23.378958
+23,6,Simple sabotage for software (2023),172,47,Sorted by points,2024-06-16 22:15:23.378958
+24,20,Harvard Railroad Economics Exam (1906),91,44,Sorted by points,2024-06-16 22:15:23.378958
+25,12,The History of DR DOS,69,14,Sorted by points,2024-06-16 22:15:23.378958
+26,27,2 GHz Active Probe,63,18,Sorted by points,2024-06-16 22:15:23.378958
+27,21,Voyager Spacecraft and Fortran 5,58,13,Sorted by points,2024-06-16 22:15:23.378958
+28,2,Experts vs. Imitators,30,10,Sorted by points,2024-06-16 22:15:23.378958
+29,17,The Banana Pi M7,17,8,Sorted by points,2024-06-16 22:15:23.378958

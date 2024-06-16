@@ -16,51 +16,52 @@ response = requests.get(url)
 
 soup = BeautifulSoup(response.text, 'html.parser')
 
-entries = []
 
-news_list = soup.find_all('tr', class_='athing')
-subtext_list = soup.find_all('td', class_='subtext')
+def extract_fields():
+    entries = []
+    news_list = soup.find_all('tr', class_='athing')
+    subtext_list = soup.find_all('td', class_='subtext')
 
-for index, (news, subtext) in enumerate(zip(news_list, subtext_list)):
+    for index, (news, subtext) in enumerate(zip(news_list, subtext_list)):
 
-    # extracting number
-    news_number = news.find('span', class_='rank').get_text().strip('.')
+        # extracting number
+        news_number = news.find('span', class_='rank').get_text().strip('.')
 
-    # title
-    news_title = news.find('span', class_='titleline').find('a').get_text()
+        # title
+        news_title = news.find('span', class_='titleline').find('a').get_text()
 
-    # points
-    news_points = subtext.find('span', class_='score')
-    # if there is no points we set value to '0' (issue with one of the news)
-    news_points2 = news_points.get_text().split()[0] if news_points else '0'
+        # points
+        news_points = subtext.find('span', class_='score')
+        # if there is no points we set value to '0' (issue with one of the news)
+        news_points2 = news_points.get_text().split()[0] if news_points else '0'
 
-    # comments
-    news_comments = subtext.find_all('a')[-1].get_text().split()[0]
+        # comments
+        news_comments = subtext.find_all('a')[-1].get_text().split()[0]
 
-    # If value of news_comments is 'discuss' change it to '0' for converting it to int after
-    ''' One of the news from website was created incorrectly with only 2 fields (time and hide)
-    The fastest way to solve is to check if the last element == 'hide' change it to '0' 
-    New's article: "Nango (YC W23) Is Hiring a Senior Product Engineer (100% Remote)"
-    '''
-    if news_comments == 'discuss' or news_comments == 'hide':
-        news_comments = '0'
+        # If value of news_comments is 'discuss' change it to '0' for converting it to int after
+        ''' One of the news from website was created incorrectly with only 2 fields (time and hide)
+        The fastest way to solve is to check if the last element == 'hide' change it to '0' 
+        New's article: "Nango (YC W23) Is Hiring a Senior Product Engineer (100% Remote)"
+        '''
+        if news_comments == 'discuss' or news_comments == 'hide':
+            news_comments = '0'
 
-    # structuring data to json format using dict
-    entry = {
-        'news_number': int(news_number),
-        'news_title': news_title,
-        'news_points': int(news_points2),
-        'news_comments': int(news_comments),
-    }
-    #print(entry)
+        # structuring data to json format using dict
+        entry = {
+            'news_number': int(news_number),
+            'news_title': news_title,
+            'news_points': int(news_points2),
+            'news_comments': int(news_comments),
+        }
 
-    # adding each dict to our list
-    entries.append(entry)
+        # adding each dict to our list
+        entries.append(entry)
+
+    return entries
 
 
 # Filter all entries with more than five words in the title ordered by the number of comments first
 def filter_entries(entries):
-
     # returns counted words without symbols
     def count_words(entry):
         words = re.findall(r'\b\w+\b', entry['news_title'])
@@ -71,6 +72,7 @@ def filter_entries(entries):
     list2 = []
     for entry in entries:
         if count_words(entry) > 5:
+            # adding columns 'filter' and 'timestamp'
             entry.update({'filter': 'Sorted by comments'})
             entry.update({'timestamp': str(datetime.now())})
             list1.append(entry)
@@ -88,9 +90,14 @@ def filter_entries(entries):
     return new_list1 + new_list2
 
 
+entries = extract_fields()
 sorted_list = filter_entries(entries)
 print(sorted_list)
+
+# creating dataframe to storage data
 headers = ['news_number', 'news_title', 'news_points', 'news_comments', 'filter', 'timestamp']
 df = pd.DataFrame(sorted_list, columns=headers)
 print(df)
+
+# saving data to csv file
 df.to_csv('news.csv')

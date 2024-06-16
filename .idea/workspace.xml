@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="145f1ad2-ecdf-48f9-8afa-d7e03ed59b22" name="Changes" comment="Filtering,sorting files and adding them to csv">
+    <list default="true" id="145f1ad2-ecdf-48f9-8afa-d7e03ed59b22" name="Changes" comment="Adding columns filter and timestamp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news.csv" beforeDir="false" afterPath="$PROJECT_DIR$/news.csv" afterDir="false" />
@@ -63,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718373918697</updated>
-      <workItem from="1718373920086" duration="21569000" />
+      <workItem from="1718373920086" duration="23064000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <option name="closed" value="true" />
@@ -113,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718460606031</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding columns filter and timestamp">
+      <option name="closed" value="true" />
+      <created>1718469893467</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718469893467</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,9 +133,10 @@
     <MESSAGE value="Extracting all required info to string" />
     <MESSAGE value="Adding all info to json format using dict" />
     <MESSAGE value="Filtering,sorting files and adding them to csv" />
-    <option name="LAST_COMMIT_MESSAGE" value="Filtering,sorting files and adding them to csv" />
+    <MESSAGE value="Adding columns filter and timestamp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding columns filter and timestamp" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1718469740277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1718565321497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
